@@ -19,6 +19,13 @@
     polaris-chip {
       margin: 16px;
     }
+    my-card{
+      margin: 16px;
+      --my-background-color: #fff;
+      --my-border-color: #ccc;
+      --card-title-bg: #004080;
+      --card-title-color: #fff;
+    }
   </style>
   <title>polaris-chip / my-card</title>
 </head>
@@ -29,10 +36,42 @@
   <polaris-chip title="News of Record" link="https://psu.edu/"></polaris-chip>
   <polaris-chip title="Faculty and Staff"></polaris-chip>
   <polaris-chip title="Sports are the only thing that matter"></polaris-chip>
-  <polaris-chip title="Grants and donations"></polaris-chip>
+  <polaris-chip title="Grants and donati"></polaris-chip>
 
-  <h1>my-card</h1>
-  <my-card></my-card>
+  <h1></h1>
+  <my-card title="Rome Colosseum"
+    image="https://cdn.britannica.com/36/162636-050-932C5D49/Colosseum-Rome-Italy.jpg" 
+    alt="Rome Colosseum">
+    <p>This is the Colosseum in Rome, Italy. It is an ancient amphitheater that was used for gladiatorial contests and public spectacles.</p>
+  </my-card>
+
+  <my-card
+    title="Eiffel Tower" 
+    image="https://choosewhere.com/public/images/fQpK5xb/crop_and_zoom_1696x1120_0x7_2000x1320/shutterstock_710380270.webp"
+    alt="Eiffel Tower">
+    <p>The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is one of the most recognizable structures in the world and a global cultural icon of France.</p>
+  </my-card>
+
+  <my-card title="Great Wall of China" 
+    image="https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F399ede1e-3150-48e6-a468-c0148bfb3d5d.jpg?crop=4999%2C2812%2C0%2C0&format=webp&quality=9&resize=1500"
+    alt="Great Wall of China">
+    <p>The Great Wall of China is a series of fortifications that were built across the historical northern borders of China to protect against invasions and raids. It is one of the most iconic landmarks in the world and a symbol of China's rich history and culture.</p>
+  </my-card>
+
+  <my-card title="Taj Mahal" 
+    image="https://media.architecturaldigest.com/photos/67acb9b0339bcbaaadeb91b5/16:9/w_2240,c_limit/GettyImages-873536102.jpg"
+    alt="Taj Mahal">
+    <p>The Taj Mahal is an ivory-white marble mausoleum located in Agra, India. It was commissioned by the Mughal emperor Shah Jahan in memory of his favorite wife, Mumtaz Mahal. The Taj Mahal is widely regarded as one of the most beautiful buildings in the world and a symbol of love and devotion.</p>
+  </my-card>
+
+  <my-card title="Statue of Liberty" 
+    image="https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_4:3,w_1920,g_auto/f_auto/q_auto/v1/Statue_of_Liberty_ss_non-editorial_blhpgs?_a=BAVAZGGf0"
+    alt="Statue of Liberty">
+    <p>The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor. It was a gift from the people of France to the United States and is a symbol of freedom and democracy. The statue depicts a robed female figure representing Libertas, the Roman goddess of freedom, who holds a torch above her head and carries a tabula ansata inscribed with the date of the American Declaration of Independence.</p>
+  </my-card>
+
+      
+    
 
   <!-- this is what is bringing in the definition for this tag -->
   <script type="module" src="./src/polaris-chip.js"></script>
