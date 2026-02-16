@@ -1,5 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import { cardTemplate } from './card-template.js';
+import "@haxtheweb/meme-maker/meme-maker.js";
 
 /**
  * Now it's your turn. Here's what we need to try and do:
@@ -21,6 +22,7 @@ export class MyCard extends LitElement {
     this.detailsLabel = "Details";
     this.fancy = false;
     this.link = "https://hax.psu.edu";
+    this.bottomText = "This is the bottom text";
   }
 
 static get styles() {
@@ -142,7 +144,11 @@ render() {
     <div class="card">
 
       <div img class='card-image'>
-        <img src="${this.image}" alt="${this.title}">
+        <meme-maker 
+        image-url="${this.image}" 
+        top-text="${this.title}"
+        bottom-text="${this.bottomText}">
+        </meme-maker>
       </div>
 
       <div class='card-text'>
@@ -173,7 +179,8 @@ render() {
       alt: { type: String },
       detailsLabel: { type: String },
       fancy: { type: Boolean, reflect: true },
-      link: { type: String }
+      link: { type: String },
+      bottomText: { type: String }
     };
   }
 }
